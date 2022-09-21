@@ -1,9 +1,9 @@
 .productImage {
-width: 150px;
+width: 120px;
 height: 120px;
 margin-bottom: 0;
 padding-bottom: 0;
-// border-radius: 50%;
+border-radius: 50%;
 } 
 
 
@@ -43,13 +43,13 @@ padding-bottom: 0;
 
 .circle-container {
     @include on-circle($item-count: 6, $circle-size: 38em, $item-size: 3em); 
-    margin: 5em auto 0;
+    margin: 8em auto 0;
     // border: solid 5px tomato;
     
     .product { 
       display: block; 
       max-width: 100%; 
-      border-radius: 50%;
+      // border-radius: 50%;
       filter: grayscale(100%);
       // border: solid 5px tomato;
       transition: .15s;
@@ -62,10 +62,12 @@ padding-bottom: 0;
   }
 
   .productName {
+    margin-right: 40px;
+    
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    color: #76B900;
+    color: red;
     font-weight: bolder;
     font-size: 12px!important;
     line-height: 20px!important;
@@ -74,10 +76,10 @@ padding-bottom: 0;
 
   .productName{
     top: 0;
-    margin-top: 0;
+    margin-top: 10px;
     padding-top: 0;
-    padding-left: 1.5rem;
-    color: #76B900;
+    padding-left: 0.8rem;
+    color: red;
     font-weight: bolder;
     font-size: 22px!important;
     line-height: 20px!important;
@@ -89,7 +91,7 @@ padding-bottom: 0;
     position: absolute;
     margin-top: -100px;
     margin-left: -35px;
-    border-radius: 30%;
+    border-radius: 50%;
   }
 
 
@@ -125,7 +127,6 @@ padding-bottom: 0;
   position: absolute;
   top: 2%;
   right: 35%;
-
 }
 .cust360 {
   color: white;
@@ -135,11 +136,14 @@ padding-bottom: 0;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .span360 {
-  color: #76B900
+  color: red
 }
 
 .salesImg {
-  scale: 2;
+  scale: 0.2;
+  position: absolute;
+  left:-450px;
+  top: -80px;
   padding-left: 4rem;
 
 }
@@ -153,7 +157,7 @@ padding-bottom: 0;
   right: 10%;
   top: 5%;
   color: #fff;
-    background-color: #76B900;
+    background-color: red;
     text-transform: uppercase;
     transition: background-color .3s ease;
 }
@@ -171,7 +175,7 @@ padding-bottom: 0;
   right: 3%;
   top: 5%;
   color: #fff;
-    background-color: #76B900;
+    background-color: red;
     text-transform: uppercase;
     transition: background-color .3s ease;
 }
